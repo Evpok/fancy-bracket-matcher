@@ -1,0 +1,35 @@
+@-webkit-keyframes bracketanimation {
+  from  {
+      border-width: 3px;
+      border-color: rgba(222, 149, 54, 1);
+      left: -3px;
+      top: -2px;
+  }
+  50%   {
+      border-width: 6px;
+      border-color: rgba(222, 149, 54, 1);
+      left: -3px;
+      top: -4px;
+  }
+  to    {
+      border-width: 1px;
+      border-color: rgba(222, 149, 54, 0.5);
+      left: 0px;
+      top: 0px;
+  }
+}
+.bracket-matcher .region {
+    border-bottom: 0;
+}
+.bracket-matcher .region:after {
+    content: "";
+    -webkit-animation-name: bracketanimation;
+    -webkit-animation-duration: .5s;
+    border: 1px solid rgba(222, 149, 54, 0.5);
+    border-style: solid;
+    border-radius: 3px;
+    background-color: rgba(255, 217, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
