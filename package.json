@@ -1,6 +1,6 @@
 {
   "name": "fancy-bracket-matcher",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Provides an obnoxiously fancy animated bracket matcher",
   "repository": "https://github.com/evpok/fancy-bracket-matcher",
   "license": "WTFPL",
