@@ -5,6 +5,6 @@
   "repository": "https://github.com/evpok/fancy-bracket-matcher",
   "license": "WTFPL",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">1.13.0"
   }
 }
