@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 [Semantic Versioning](http://semver.org/).
 
 
+## [2.0.0] - 2017-09-11
+[2.0.0]: https://github.com/Evpok/fancy-bracket-matcher/compare/v1.0.2...v2.0.
+### Changed
+  - The highlight colour now depends on the syntax theme. (Yes, an option to change it is underway, 🐻 with me)
 ## [1.0.2] - 2017-08-18
 [1.0.2]: https://github.com/Evpok/fancy-bracket-matcher/compare/v1.0.1...v1.0.2
 ### Fixed
