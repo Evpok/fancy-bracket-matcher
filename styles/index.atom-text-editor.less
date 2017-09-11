@@ -1,19 +1,23 @@
+@accent: @syntax-selection-flash-color;
+@final-accent: fade(@accent, 50%);
+@background: fade(@accent, 20%);
+
 @-webkit-keyframes bracketanimation {
   from  {
       border-width: 3px;
-      border-color: rgba(222, 149, 54, 1);
-      left: 0px;
+      border-color: @accent;
+      left: -2px;
       top: 0px;
   }
   50%   {
       border-width: 6px;
-      border-color: rgba(222, 149, 54, 1);
-      left: 0px;
+      border-color: @accent;
+      left: -3px;
       top: 0px;
   }
   to    {
       border-width: 1px;
-      border-color: rgba(222, 149, 54, 0.5);
+      border-color: @final-accent;
       left: 0px;
       top: 0px;
   }
@@ -26,10 +30,10 @@
     content: "";
     -webkit-animation-name: bracketanimation;
     -webkit-animation-duration: .5s;
-    border: 1px solid rgba(222, 149, 54, 0.5);
+    border: 1px solid @final-accent;
     border-style: solid;
     border-radius: 3px;
-    background-color: rgba(255, 217, 0, 0.2);
+    background-color: @background;
     width: 100%;
     height: 100%;
     position: absolute;
