@@ -1,25 +1,31 @@
-@accent: @syntax-selection-flash-color;
+@accent: @syntax-color-modified;
 @final-accent: fade(@accent, 50%);
 @background: fade(@accent, 20%);
 
 @-webkit-keyframes bracketanimation {
   from  {
-      border-width: 3px;
+      border-width: 1px;
       border-color: @accent;
-      left: -2px;
-      top: 0px;
+      height: 100%;
+      top: 0;
+      width: 100%;
+      left: 0;
   }
   50%   {
-      border-width: 6px;
+      border-width: 3px;
       border-color: @accent;
-      left: -3px;
-      top: 0px;
+      height: 200%;
+      top: -50%;
+      width: 250%;
+      left: -75%;
   }
   to    {
       border-width: 1px;
       border-color: @final-accent;
-      left: 0px;
-      top: 0px;
+      height: 100%;
+      top:0;
+      width: 100%;
+      left:0;
   }
 }
 .bracket-matcher .region {
@@ -27,7 +33,7 @@
     box-shadow: none !important;
 }
 .bracket-matcher .region:after {
-    content: "";
+    content: " ";
     -webkit-animation-name: bracketanimation;
     -webkit-animation-duration: .5s;
     border: 1px solid @final-accent;
